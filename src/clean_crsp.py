@@ -2,9 +2,9 @@
 
 Run from the repository root:
 
-    python3 src/clean_crsp.py --input data/crsp_monthly.parquet --output data/crsp_monthly_clean.parquet
+    python3 src/clean_crsp.py --input data/crsp_monthly.csv --output data/crsp_monthly_clean.csv
 
-Uses CSV paths instead if CSV files were pulled.
+Uses Parquet paths instead if Parquet files were pulled.
 """
 
 from __future__ import annotations
