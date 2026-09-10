@@ -5,3 +5,6 @@ __pycache__/
 
 # Data files
 data/
+
+# Report files
+reports/value_metrics.csv
