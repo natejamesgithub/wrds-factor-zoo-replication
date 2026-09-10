@@ -42,8 +42,6 @@ For other factors, replace `value` with `profitability`, `investment`, `momentum
 
 ## Results
 
-Place generated PNGs in `reports/`. GitHub will render them from these relative paths:
-
 ![Cumulative long-short return](reports/value_cumulative_return.png)
 
 ![Monthly long-short returns](reports/value_monthly_returns.png)
@@ -62,9 +60,7 @@ Key outputs:
 
 ## Interpretation
 
-The main result is the long-short factor return: the high-signal portfolio minus the low-signal portfolio. Stronger evidence comes from a positive CAGR, reasonable Sharpe ratio, controlled drawdowns, and consistency over many years rather than a few strong months.
-
-The current implementation is a clean factor-style replication framework, not an exact recreation of the official Fama-French library portfolios.
+The value factor shows strong long-short performance over the sample, compounding to roughly 380% by the end of 2024. Returns were not smooth: the strategy experienced repeated drawdowns, with the deepest decline around 35% during the 2019-2021 period, but recovered sharply afterward. The monthly return chart shows that performance came from many small positive months plus a few large upside months, while losses were frequent but generally smaller outside major drawdown periods. The long-vs-short chart suggests that factor performance was driven by both legs, though the long book contributed larger upside spikes. Overall, the results are directionally supportive of a value premium, but the volatility and drawdowns make risk management and comparison against Fama-French benchmarks important next steps.
 
 ## Tests
 
